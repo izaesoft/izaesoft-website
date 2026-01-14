@@ -245,12 +245,14 @@ body {
 }
 
 /* Menu Grid */
+
 .menu-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 204px);
 	gap: 25px;
 	margin: 0 auto 40px;
 	justify-content: center;
+	width: fit-content;
 }
 
 .menu-item {
@@ -1206,8 +1208,10 @@ body {
 /* Gallery */
 .gallery-grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, minmax(0, 320px));
 	gap: 20px;
+	justify-content: center;
+	width: fit-content;
 }
 
 .gallery-item {
