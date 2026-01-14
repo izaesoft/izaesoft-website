@@ -248,14 +248,14 @@ body {
 
 .menu-grid {
 	display: grid;
-	grid-template-columns: repeat(2, 204px);
+	grid-template-columns: repeat(2, 240px);
 	gap: 25px;
 	margin: 0 auto 40px;
 	justify-content: center;
-	width: fit-content;
 }
 
 .menu-item {
+
 	height: 170px;
 	background: var(--glass-bg);
 	backdrop-filter: blur(20px);
@@ -321,6 +321,8 @@ body {
 	animation-delay: 1.2s;
 }
 
+
+
 .menu-item.initial-load:nth-child(3) {
 	animation-delay: 1.3s;
 }
@@ -336,6 +338,13 @@ body {
 .menu-item.initial-load:nth-child(6) {
 	animation-delay: 1.6s;
 }
+
+.menu-item:last-child:nth-child(odd) {
+		grid-column: span 2;
+	    width:240px;
+		justify-self:center;
+}
+
 
 @keyframes menuAppear {
 	to {
@@ -1683,6 +1692,12 @@ body {
 		height: 145px;
 	}
 
+		.menu-item:last-child:nth-child(odd) {
+			grid-column: span 2;
+			width: 170px;
+			justify-self: center;
+		}
+
 	.intro-hero {
 		grid-template-columns: 1fr;
 		gap: 40px;
@@ -1742,6 +1757,12 @@ body {
 	.menu-item {
 		height: 135px;
 	}
+
+		.menu-item:last-child:nth-child(odd) {
+			grid-column: span 2;
+			width: 155px;
+			justify-self: center;
+		}
 
 	.menu-badge {
 		width: 50px;
@@ -1843,6 +1864,12 @@ body {
 	.menu-item {
 		height: 120px;
 	}
+
+		.menu-item:last-child:nth-child(odd) {
+			grid-column: span 2;
+			width: 130px;
+			justify-self: center;
+		}
 
 	.menu-badge {
 		width: 45px;
